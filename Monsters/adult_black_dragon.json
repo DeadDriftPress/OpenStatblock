@@ -5,23 +5,9 @@
     "edition": "5"
   },
   "size": "huge",
-  "alignment": "chaotic evil",
-  "type": "dragon",
+  "alignment": "Chaotic Evil",
+  "type": "Dragon",
   "type_tag": "",
-  "attributes": {
-    "strength": 23,
-    "strength_modifier": 6,
-    "dexterity": 14,
-    "dexterity_modifier": 2,
-    "constitution": 21,
-    "constitution_modifier": 5,
-    "intelligence": 14,
-    "intelligence_modifier": 2,
-    "wisdom": 13,
-    "wisdom_modifier": 1,
-    "charisma": 17,
-    "charisma_modifier": 3
-  },
   "armor": {
     "armor_class": 19,
     "armor_type": "Natural Armor"
@@ -36,6 +22,20 @@
     "walk": 40,
     "fly": 80,
     "swim": 40
+  },
+  "attributes": {
+    "strength": 23,
+    "strength_modifier": 6,
+    "dexterity": 14,
+    "dexterity_modifier": 2,
+    "constitution": 21,
+    "constitution_modifier": 5,
+    "intelligence": 14,
+    "intelligence_modifier": 2,
+    "wisdom": 13,
+    "wisdom_modifier": 1,
+    "charisma": 17,
+    "charisma_modifier": 3
   },
   "saving_throws": {
     "dexterity": 7,
@@ -185,7 +185,7 @@
               "ability": "dexterity",
               "dc": 19,
               "effects": [
-                "prone"
+                "Prone"
               ],
               "damage": {
                 "dice_type": 6,
