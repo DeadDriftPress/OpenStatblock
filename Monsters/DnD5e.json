@@ -1,0 +1,202 @@
+{
+  "name": "Adult Black Dragon",
+  "game": {
+    "system": "Dungeons & Dragons",
+    "edition": "5"
+  },
+  "size": "huge",
+  "alignment": "chaotic evil",
+  "type": "dragon",
+  "type_tag": "",
+  "attributes": {
+    "strength": 23,
+    "strength_modifier": 6,
+    "dexterity": 14,
+    "dexterity_modifier": 2,
+    "constitution": 21,
+    "constitution_modifier": 5,
+    "intelligence": 14,
+    "intelligence_modifier": 2,
+    "wisdom": 13,
+    "wisdom_modifier": 1,
+    "charisma": 17,
+    "charisma_modifier": 3
+  },
+  "armor": {
+    "armor_class": 19,
+    "armor_type": "Natural Armor"
+  },
+  "health": {
+      "num_hit_dice": 17,
+      "hit_die_size": 12,
+      "hit_point_modifier": 85,
+      "average_hit_points": 195
+  },
+  "speed": {
+    "walk": 40,
+    "fly": 80,
+    "swim": 40
+  },
+  "saving_throws": {
+    "dexterity": 7,
+    "constitution": 10,
+    "wisdom": 6,
+    "charisma": 8
+  },
+  "skills": {
+    "perception": 11,
+    "stealth": 7
+  },
+  "damage_immunities": ["acid"],
+  "damage_resistances": [],
+  "senses": {
+    "blindsight": 60,
+    "darkvision": 120,
+    "passive_perception": 21
+  },
+  "languages": ["Common", "Draconic"],
+  "challenge": 14,
+  "experience": 11500,
+  "special_abilities": {
+    "Amphibious": "The dragon can breathe air and water.",
+    "Legendary Resistance (3/day)": "If the dragon fails a saving throw, it can choose to succeed instead."
+  },
+  "actions": {
+    "Multiattack": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+    "actions": [
+      {
+        "name": "Bite",
+        "type": "Melee Weapon Attack",
+        "to_hit": 11,
+        "reach_range": 10,
+        "target": "one target",
+        "text": "Bite. Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 4 (1d8) acid damage.",
+        "damage": [
+          {
+            "dice_type": 10,
+            "num_dice": 2,
+            "damage_modifier": 6,
+            "average_damage": 17,
+            "damage_type": "piercing"
+          },
+          {
+            "dice_type": 8,
+            "num_dice": 1,
+            "damage_modifier": 0,
+            "average_damage": 4,
+            "damage_type": "acid"
+          }
+        ]
+      },
+      {
+        "name": "Claw",
+        "type": "Melee Weapon Attack",
+        "to_hit": 11,
+        "reach_range": 5,
+        "target": "one target",
+        "text": "Claw. Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+        "damage": [
+          {
+            "dice_type": 6,
+            "num_dice": 2,
+            "damage_modifier": 6,
+            "average_damage": 13,
+            "damage_type": "slashing"
+          }
+        ]
+      },
+      {
+        "name": "Tail",
+        "type": "Melee Weapon Attack",
+        "to_hit": 11,
+        "reach_range": 15,
+        "target": "one target",
+        "text": "Tail. Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage.",
+        "damage": [
+          {
+            "dice_type": 8,
+            "num_dice": 2,
+            "damage_modifier": 6,
+            "average_damage": 15,
+            "damage_type": "bludgeoning"
+          }
+        ]
+      },
+      {
+        "name": "Frightful Presence",
+        "type": "special",
+        "save": {
+          "ability": "wisdom",
+          "dc": 16
+        },
+        "reach_range": 120,
+        "target": "one target",
+        "text": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+        "effects":[
+          {
+            "name": "frightened",
+            "time": "1 minute",
+            "repeat": "end of each of it's turns",
+            "notes": "Immune for 24 hours on success"
+          }
+        ],
+      },
+      {
+        "name": "Acid Breath",
+        "type": "special",
+        "recharge": [5,6],
+        "save": {
+          "ability": "dexterity",
+          "dc": 18
+        },
+        "reach_range": 60,
+        "area_of_effect": "5 foot wide line",
+        "target": "one target",
+        "text": "The dragon exhales acid in a 60-­foot line that is 5 feet wide. Each creature in that line must make a DC 18 Dexterity saving throw, taking 54 (12d8) acid damage on a failed save, or half as much damage on a successful one.",
+        "damage": [
+          {
+            "dice_type": 8,
+            "num_dice": 12,
+            "damage_modifier": 0,
+            "average_damage": 54,
+            "damage_type": "acid"
+          }
+        ],
+      }
+    ],
+    "legendary_actions": {
+        "text": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+        "actions": [
+          {
+            "name": "Detect",
+            "text": "The dragon makes a Wisdom (Perception) check.",
+            "cost": 1
+          },
+          {
+            "name": "Tail Attack",
+            "text": "The dragon makes a tail attack.",
+            "cost": 1
+          },
+          {
+            "name": "Wing Attack",
+            "text": "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 19 Dexterity saving throw or take 13 (2d6 + 6) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+            "cost": 2,
+            "save": {
+              "ability": "dexterity",
+              "dc": 19,
+              "effects": [
+                "prone"
+              ],
+              "damage": {
+                "dice_type": 6,
+                "num_dice": 2,
+                "damage_modifier": 6,
+                "average_damage": 13,
+                "damage_type": "bludgeoning"
+              }
+            }
+          }
+        ]
+    }
+  }
+}
