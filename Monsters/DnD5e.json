@@ -1,41 +1,41 @@
 {
-  "name": "Adult Black Dragon",
+  "name": "Creature Name",
   "game": {
     "system": "Dungeons & Dragons",
     "edition": "5"
   },
-  "size": "huge",
-  "alignment": "chaotic evil",
-  "type": "dragon",
-  "type_tag": "",
+  "size": "Creature size",
+  "alignment": "Creature Alignment",
+  "type": "Creature type, ie Dragon, Humanoid, Fey",
+  "type_tag": "Any subtype tag to apply to the creaure, such as undead",
   "attributes": {
-    "strength": 23,
-    "strength_modifier": 6,
-    "dexterity": 14,
-    "dexterity_modifier": 2,
-    "constitution": 21,
-    "constitution_modifier": 5,
-    "intelligence": 14,
-    "intelligence_modifier": 2,
-    "wisdom": 13,
-    "wisdom_modifier": 1,
-    "charisma": 17,
-    "charisma_modifier": 3
+    "strength": 10,
+    "strength_modifier": 0,
+    "dexterity": 10,
+    "dexterity_modifier": 0,
+    "constitution": 10,
+    "constitution_modifier": 0,
+    "intelligence": 10,
+    "intelligence_modifier": 0,
+    "wisdom": 10,
+    "wisdom_modifier": 0,
+    "charisma": 10,
+    "charisma_modifier": 0
   },
   "armor": {
-    "armor_class": 19,
-    "armor_type": "Natural Armor"
+    "armor_class": 12,
+    "armor_type": "Armor type, such as Natural Armor, Plate, Chainmail, Splint Mail and Shield, etc"
   },
   "health": {
-      "num_hit_dice": 17,
-      "hit_die_size": 12,
-      "hit_point_modifier": 85,
-      "average_hit_points": 195
+      "num_hit_dice": 1,
+      "hit_die_size": 8,
+      "hit_point_modifier": 0,
+      "average_hit_points": 4
   },
   "speed": {
-    "walk": 40,
-    "fly": 80,
-    "swim": 40
+    "walk": 30,
+    "fly": 10,
+    "swim": 20
   },
   "saving_throws": {
     "dexterity": 7,
