@@ -4,10 +4,11 @@
     "system": "Dungeons & Dragons",
     "edition": "5"
   },
-  "size": "huge",
-  "alignment": "Chaotic Evil",
-  "type": "Dragon",
+  "collection": "SRD",
+  "size": "Huge",
+  "type": "dragon",
   "type_tag": "",
+  "alignment": "chaotic evil",
   "armor": {
     "armor_class": 19,
     "armor_type": "Natural Armor"
@@ -183,19 +184,19 @@
             "cost": 2,
             "save": {
               "ability": "dexterity",
-              "dc": 19,
-              "effects": [
-                "Prone"
-              ],
-              "damage": {
+              "dc": 19
+            }
+            "effects": [
+              "Prone"
+            ],
+            "damage": {
                 "dice_type": 6,
                 "num_dice": 2,
                 "damage_modifier": 6,
                 "average_damage": 13,
                 "damage_type": "bludgeoning"
-              }
             }
-          }
+            }
         ]
     }
   }
