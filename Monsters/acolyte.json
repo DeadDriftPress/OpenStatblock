@@ -1,0 +1,83 @@
+{
+  "name": "Acolyte",
+  "game": {
+    "system": "Dungeons & Dragons",
+    "edition": "5"
+  },
+  "collection": "SRD",
+  "size": "Medium",
+  "type": "humanoid",
+  "type_tag": "",
+  "alignment": "any",
+  "armor": {
+    "armor_class": 10,
+    "armor_type": ""
+  },
+  "health": {
+      "num_hit_dice": 2,
+      "hit_die_size": 8,
+      "hit_point_modifier": 0,
+      "average_hit_points": 9
+  },
+  "speed": {
+    "walk": 20
+  },
+  "attributes": {
+    "strength": 10,
+    "strength_modifier": 0,
+    "dexterity": 10,
+    "dexterity_modifier": 0,
+    "constitution": 10,
+    "constitution_modifier": 0,
+    "intelligence": 10,
+    "intelligence_modifier": 0,
+    "wisdom": 14,
+    "wisdom_modifier": 2,
+    "charisma": 11,
+    "charisma_modifier": 0
+  },
+  "skills": {
+    "Medicine": 4,
+    "Religion": 2
+  },
+  "damage_immunities": [],
+  "damage_resistances": [],
+  "senses": {
+    "Passive_Perception": 12
+  },
+  "languages": ["Any one language (usually Common)"],
+  "challenge": 0.25,
+  "experience": 50,
+  "special_abilities": {
+    "Spellcasting": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:",
+  },
+  "spells": {
+      "spell_slots": {
+        "1st_Level": 3
+      },
+      "Cantrips": ["light", "sacred flame", "thaumaturgy"],
+      "1st_Level": ["bless", "cure wounds", "sanctuary"]
+      }
+  },
+  "actions": {
+    "actions": [
+      {
+        "name": "Club",
+        "type": "Melee Weapon Attack",
+        "to_hit": 2,
+        "reach_range": 5,
+        "target": "one target",
+        "text": "Club. Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+        "damage": [
+          {
+            "dice_type": 4,
+            "num_dice": 1,
+            "damage_modifier": 0,
+            "average_damage": 2,
+            "damage_type": "bludgeoning"
+          }
+        ]
+      }
+    ]
+  }
+}
